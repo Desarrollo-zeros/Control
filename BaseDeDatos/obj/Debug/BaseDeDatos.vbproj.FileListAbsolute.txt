@@ -1,0 +1,13 @@
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\bin\Debug\BaseDeDatos.dll.config
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\bin\Debug\BaseDeDatos.dll
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\bin\Debug\BaseDeDatos.pdb
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\bin\Debug\BaseDeDatos.xml
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\bin\Debug\Entidades.dll
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\bin\Debug\Entidades.pdb
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\bin\Debug\Entidades.xml
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\obj\Debug\BaseDeDatos.vbprojResolveAssemblyReference.cache
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\obj\Debug\BaseDeDatos.Resources.resources
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\obj\Debug\BaseDeDatos.vbproj.GenerateResource.Cache
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\obj\Debug\BaseDeDatos.dll
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\obj\Debug\BaseDeDatos.xml
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\obj\Debug\BaseDeDatos.pdb

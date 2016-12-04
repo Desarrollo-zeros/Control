@@ -1,0 +1,15 @@
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\bin\Debug\Logica.dll
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\bin\Debug\Logica.pdb
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\bin\Debug\Logica.xml
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\bin\Debug\BaseDeDatos.dll
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\bin\Debug\Entidades.dll
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\bin\Debug\BaseDeDatos.pdb
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\bin\Debug\BaseDeDatos.xml
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\bin\Debug\Entidades.pdb
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\bin\Debug\Entidades.xml
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\obj\Debug\Logica.vbprojResolveAssemblyReference.cache
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\obj\Debug\Logica.Resources.resources
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\obj\Debug\Logica.vbproj.GenerateResource.Cache
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\obj\Debug\Logica.dll
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\obj\Debug\Logica.xml
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Logica\obj\Debug\Logica.pdb

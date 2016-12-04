@@ -1,0 +1,8 @@
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\bin\Debug\Entidades.dll
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\bin\Debug\Entidades.pdb
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\bin\Debug\Entidades.xml
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\obj\Debug\Entidades.Resources.resources
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.Cache
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\obj\Debug\Entidades.dll
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\obj\Debug\Entidades.xml
+c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\obj\Debug\Entidades.pdb
