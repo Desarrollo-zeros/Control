@@ -39,6 +39,10 @@ Presentacion
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Presentacion.My.Resources.Resources.Captura1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Presentacion.My.Resources.Resources.chat">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -48,18 +52,6 @@ Presentacion
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Presentacion.My.Resources.Resources.descarga">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Presentacion.My.Resources.Resources.descarga__1_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Presentacion.My.Resources.Resources.descarga__2_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Presentacion.My.Resources.Resources.descarga__3_">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -95,14 +87,6 @@ Presentacion
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Presentacion.My.Resources.Resources.images__2_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="P:Presentacion.My.Resources.Resources.images__3_">
-	<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
 </member><member name="P:Presentacion.My.Resources.Resources.modificar">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -112,6 +96,10 @@ Presentacion
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Presentacion.My.Resources.Resources.sinfoto">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Presentacion.My.Resources.Resources.sinfoto1">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

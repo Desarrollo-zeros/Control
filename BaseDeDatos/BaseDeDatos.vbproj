@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDeDatosUsuarios.vb" />
+    <Compile Include="Ciudad.vb" />
     <Compile Include="Clientes.vb" />
     <Compile Include="ConexionBaseDeDatos.vb" />
     <Compile Include="Correos.vb" />

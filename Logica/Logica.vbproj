@@ -62,6 +62,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.vb" />
     <Compile Include="Correo.vb" />
     <Compile Include="Enciptar.vb" />
     <Compile Include="LogicaUsuario.vb" />

@@ -27,20 +27,27 @@ Partial Class Operador
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Operador))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.AgregarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarClienteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgregarVehiculoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RealizarTranToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.GrillaOperador = New System.Windows.Forms.DataGridView()
+        Me.Eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.CheckEliminar = New System.Windows.Forms.CheckBox()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.BoxFre = New System.Windows.Forms.ComboBox()
         Me.BtnEliminar = New System.Windows.Forms.Button()
-        Me.GrillaOperador = New System.Windows.Forms.DataGridView()
+        Me.BtnTfoto = New System.Windows.Forms.Button()
         Me.BtnEditar = New System.Windows.Forms.Button()
         Me.BtnGuardar = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TxTTelefono = New System.Windows.Forms.MaskedTextBox()
         Me.TxtEdad = New System.Windows.Forms.MaskedTextBox()
         Me.TxtCedula = New System.Windows.Forms.MaskedTextBox()
         Me.TxTDirecion = New System.Windows.Forms.TextBox()
-        Me.TxTTotal = New System.Windows.Forms.TextBox()
         Me.TxTCompra = New System.Windows.Forms.TextBox()
         Me.TxtCorreo = New System.Windows.Forms.TextBox()
         Me.TextNombre = New System.Windows.Forms.TextBox()
@@ -50,7 +57,6 @@ Partial Class Operador
         Me.BoxGenero = New System.Windows.Forms.ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -60,17 +66,14 @@ Partial Class Operador
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.AgregarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AgregarClienteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AgregarVehiculoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RealizarTranToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TxtBuscar = New System.Windows.Forms.TextBox()
+        Me.Boxbuscar = New System.Windows.Forms.ComboBox()
+        Me.BtnActualizar = New System.Windows.Forms.Button()
+        Me.BtnStart = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GrillaOperador, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -83,14 +86,53 @@ Partial Class Operador
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
+        'AgregarClienteToolStripMenuItem
+        '
+        Me.AgregarClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarClienteToolStripMenuItem1, Me.AgregarVehiculoToolStripMenuItem})
+        Me.AgregarClienteToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.Guardar
+        Me.AgregarClienteToolStripMenuItem.Name = "AgregarClienteToolStripMenuItem"
+        Me.AgregarClienteToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
+        Me.AgregarClienteToolStripMenuItem.Text = "Agregar"
+        '
+        'AgregarClienteToolStripMenuItem1
+        '
+        Me.AgregarClienteToolStripMenuItem1.Image = Global.Presentacion.My.Resources.Resources.Guardar1
+        Me.AgregarClienteToolStripMenuItem1.Name = "AgregarClienteToolStripMenuItem1"
+        Me.AgregarClienteToolStripMenuItem1.Size = New System.Drawing.Size(168, 22)
+        Me.AgregarClienteToolStripMenuItem1.Text = "Agregar Producto"
+        '
+        'AgregarVehiculoToolStripMenuItem
+        '
+        Me.AgregarVehiculoToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.Guardar1
+        Me.AgregarVehiculoToolStripMenuItem.Name = "AgregarVehiculoToolStripMenuItem"
+        Me.AgregarVehiculoToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.AgregarVehiculoToolStripMenuItem.Text = "Agregar Vehiculo"
+        '
+        'RealizarTranToolStripMenuItem
+        '
+        Me.RealizarTranToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.transacción
+        Me.RealizarTranToolStripMenuItem.Name = "RealizarTranToolStripMenuItem"
+        Me.RealizarTranToolStripMenuItem.Size = New System.Drawing.Size(150, 20)
+        Me.RealizarTranToolStripMenuItem.Text = "Realizar transacciones"
+        '
+        'ListaToolStripMenuItem
+        '
+        Me.ListaToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.Buscar
+        Me.ListaToolStripMenuItem.Name = "ListaToolStripMenuItem"
+        Me.ListaToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
+        Me.ListaToolStripMenuItem.Text = "Lista "
+        '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.BtnActualizar)
+        Me.GroupBox1.Controls.Add(Me.Boxbuscar)
+        Me.GroupBox1.Controls.Add(Me.TxtBuscar)
+        Me.GroupBox1.Controls.Add(Me.GrillaOperador)
+        Me.GroupBox1.Controls.Add(Me.CheckEliminar)
         Me.GroupBox1.Controls.Add(Me.Chart1)
         Me.GroupBox1.Controls.Add(Me.BoxFre)
         Me.GroupBox1.Controls.Add(Me.BtnEliminar)
-        Me.GroupBox1.Controls.Add(Me.GrillaOperador)
-        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.BtnTfoto)
         Me.GroupBox1.Controls.Add(Me.BtnEditar)
         Me.GroupBox1.Controls.Add(Me.BtnGuardar)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -99,7 +141,6 @@ Partial Class Operador
         Me.GroupBox1.Controls.Add(Me.TxtEdad)
         Me.GroupBox1.Controls.Add(Me.TxtCedula)
         Me.GroupBox1.Controls.Add(Me.TxTDirecion)
-        Me.GroupBox1.Controls.Add(Me.TxTTotal)
         Me.GroupBox1.Controls.Add(Me.TxTCompra)
         Me.GroupBox1.Controls.Add(Me.TxtCorreo)
         Me.GroupBox1.Controls.Add(Me.TextNombre)
@@ -109,7 +150,6 @@ Partial Class Operador
         Me.GroupBox1.Controls.Add(Me.BoxGenero)
         Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -119,6 +159,7 @@ Partial Class Operador
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.BtnStart)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 48)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(873, 385)
@@ -126,15 +167,33 @@ Partial Class Operador
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Cliente"
         '
-        'CheckBox1
+        'GrillaOperador
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(401, 342)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(62, 17)
-        Me.CheckBox1.TabIndex = 36
-        Me.CheckBox1.Text = "Eliminar"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.GrillaOperador.AllowUserToAddRows = False
+        Me.GrillaOperador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.GrillaOperador.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eliminar})
+        Me.GrillaOperador.Location = New System.Drawing.Point(300, 245)
+        Me.GrillaOperador.Name = "GrillaOperador"
+        Me.GrillaOperador.ReadOnly = True
+        Me.GrillaOperador.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.GrillaOperador.Size = New System.Drawing.Size(476, 91)
+        Me.GrillaOperador.TabIndex = 37
+        '
+        'Eliminar
+        '
+        Me.Eliminar.HeaderText = "Eliminar"
+        Me.Eliminar.Name = "Eliminar"
+        Me.Eliminar.ReadOnly = True
+        '
+        'CheckEliminar
+        '
+        Me.CheckEliminar.AutoSize = True
+        Me.CheckEliminar.Location = New System.Drawing.Point(401, 342)
+        Me.CheckEliminar.Name = "CheckEliminar"
+        Me.CheckEliminar.Size = New System.Drawing.Size(62, 17)
+        Me.CheckEliminar.TabIndex = 36
+        Me.CheckEliminar.Text = "Eliminar"
+        Me.CheckEliminar.UseVisualStyleBackColor = True
         '
         'Chart1
         '
@@ -155,7 +214,7 @@ Partial Class Operador
         'BoxFre
         '
         Me.BoxFre.FormattingEnabled = True
-        Me.BoxFre.Location = New System.Drawing.Point(92, 205)
+        Me.BoxFre.Location = New System.Drawing.Point(94, 230)
         Me.BoxFre.Name = "BoxFre"
         Me.BoxFre.Size = New System.Drawing.Size(169, 21)
         Me.BoxFre.TabIndex = 34
@@ -169,13 +228,14 @@ Partial Class Operador
         Me.BtnEliminar.Text = "Eliminar"
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
-        'GrillaOperador
+        'BtnTfoto
         '
-        Me.GrillaOperador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.GrillaOperador.Location = New System.Drawing.Point(309, 204)
-        Me.GrillaOperador.Name = "GrillaOperador"
-        Me.GrillaOperador.Size = New System.Drawing.Size(552, 127)
-        Me.GrillaOperador.TabIndex = 31
+        Me.BtnTfoto.Image = Global.Presentacion.My.Resources.Resources.Foto1
+        Me.BtnTfoto.Location = New System.Drawing.Point(276, 159)
+        Me.BtnTfoto.Name = "BtnTfoto"
+        Me.BtnTfoto.Size = New System.Drawing.Size(40, 30)
+        Me.BtnTfoto.TabIndex = 30
+        Me.BtnTfoto.UseVisualStyleBackColor = True
         '
         'BtnEditar
         '
@@ -204,9 +264,18 @@ Partial Class Operador
         Me.Button1.Text = "..."
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Presentacion.My.Resources.Resources.sinfoto
+        Me.PictureBox1.Location = New System.Drawing.Point(276, 17)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(168, 172)
+        Me.PictureBox1.TabIndex = 25
+        Me.PictureBox1.TabStop = False
+        '
         'TxTTelefono
         '
-        Me.TxTTelefono.Location = New System.Drawing.Point(92, 126)
+        Me.TxTTelefono.Location = New System.Drawing.Point(94, 151)
         Me.TxTTelefono.Name = "TxTTelefono"
         Me.TxTTelefono.Size = New System.Drawing.Size(169, 20)
         Me.TxTTelefono.TabIndex = 24
@@ -227,28 +296,21 @@ Partial Class Operador
         '
         'TxTDirecion
         '
-        Me.TxTDirecion.Location = New System.Drawing.Point(92, 256)
+        Me.TxTDirecion.Location = New System.Drawing.Point(94, 260)
         Me.TxTDirecion.Name = "TxTDirecion"
         Me.TxTDirecion.Size = New System.Drawing.Size(169, 20)
         Me.TxTDirecion.TabIndex = 21
         '
-        'TxTTotal
-        '
-        Me.TxTTotal.Location = New System.Drawing.Point(92, 230)
-        Me.TxTTotal.Name = "TxTTotal"
-        Me.TxTTotal.Size = New System.Drawing.Size(169, 20)
-        Me.TxTTotal.TabIndex = 20
-        '
         'TxTCompra
         '
-        Me.TxTCompra.Location = New System.Drawing.Point(92, 179)
+        Me.TxTCompra.Location = New System.Drawing.Point(94, 204)
         Me.TxTCompra.Name = "TxTCompra"
         Me.TxTCompra.Size = New System.Drawing.Size(169, 20)
         Me.TxTCompra.TabIndex = 18
         '
         'TxtCorreo
         '
-        Me.TxtCorreo.Location = New System.Drawing.Point(92, 152)
+        Me.TxtCorreo.Location = New System.Drawing.Point(94, 177)
         Me.TxtCorreo.Name = "TxtCorreo"
         Me.TxtCorreo.Size = New System.Drawing.Size(169, 20)
         Me.TxtCorreo.TabIndex = 17
@@ -270,7 +332,7 @@ Partial Class Operador
         'BoxCiudad
         '
         Me.BoxCiudad.FormattingEnabled = True
-        Me.BoxCiudad.Location = New System.Drawing.Point(92, 283)
+        Me.BoxCiudad.Location = New System.Drawing.Point(94, 287)
         Me.BoxCiudad.Name = "BoxCiudad"
         Me.BoxCiudad.Size = New System.Drawing.Size(200, 21)
         Me.BoxCiudad.TabIndex = 14
@@ -278,7 +340,7 @@ Partial Class Operador
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(29, 313)
+        Me.Label12.Location = New System.Drawing.Point(31, 129)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(42, 13)
         Me.Label12.TabIndex = 13
@@ -287,15 +349,15 @@ Partial Class Operador
         'BoxGenero
         '
         Me.BoxGenero.FormattingEnabled = True
-        Me.BoxGenero.Location = New System.Drawing.Point(92, 310)
+        Me.BoxGenero.Location = New System.Drawing.Point(92, 126)
         Me.BoxGenero.Name = "BoxGenero"
-        Me.BoxGenero.Size = New System.Drawing.Size(200, 21)
+        Me.BoxGenero.Size = New System.Drawing.Size(169, 21)
         Me.BoxGenero.TabIndex = 3
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(29, 283)
+        Me.Label13.Location = New System.Drawing.Point(31, 287)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(40, 13)
         Me.Label13.TabIndex = 12
@@ -304,25 +366,16 @@ Partial Class Operador
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(25, 258)
+        Me.Label11.Location = New System.Drawing.Point(27, 262)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(46, 13)
         Me.Label11.TabIndex = 10
         Me.Label11.Text = "Direcion"
         '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(12, 237)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(75, 13)
-        Me.Label10.TabIndex = 9
-        Me.Label10.Text = "Total Compras"
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(0, 211)
+        Me.Label9.Location = New System.Drawing.Point(2, 236)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(90, 13)
         Me.Label9.TabIndex = 8
@@ -331,7 +384,7 @@ Partial Class Operador
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(12, 186)
+        Me.Label8.Location = New System.Drawing.Point(14, 211)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(70, 13)
         Me.Label8.TabIndex = 7
@@ -340,7 +393,7 @@ Partial Class Operador
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(31, 159)
+        Me.Label7.Location = New System.Drawing.Point(33, 184)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(38, 13)
         Me.Label7.TabIndex = 6
@@ -349,7 +402,7 @@ Partial Class Operador
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(28, 133)
+        Me.Label6.Location = New System.Drawing.Point(30, 158)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(43, 13)
         Me.Label6.TabIndex = 5
@@ -399,59 +452,39 @@ Partial Class Operador
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID"
         '
-        'Button2
+        'TxtBuscar
         '
-        Me.Button2.Image = Global.Presentacion.My.Resources.Resources.Foto1
-        Me.Button2.Location = New System.Drawing.Point(276, 159)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(40, 30)
-        Me.Button2.TabIndex = 30
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.TxtBuscar.Location = New System.Drawing.Point(429, 219)
+        Me.TxtBuscar.Name = "TxtBuscar"
+        Me.TxtBuscar.Size = New System.Drawing.Size(169, 20)
+        Me.TxtBuscar.TabIndex = 39
         '
-        'PictureBox1
+        'Boxbuscar
         '
-        Me.PictureBox1.Image = Global.Presentacion.My.Resources.Resources.sinfoto
-        Me.PictureBox1.Location = New System.Drawing.Point(276, 17)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(168, 172)
-        Me.PictureBox1.TabIndex = 25
-        Me.PictureBox1.TabStop = False
+        Me.Boxbuscar.FormattingEnabled = True
+        Me.Boxbuscar.Items.AddRange(New Object() {"Cedula", "Nombre", "Telefono", "Correo"})
+        Me.Boxbuscar.Location = New System.Drawing.Point(300, 219)
+        Me.Boxbuscar.Name = "Boxbuscar"
+        Me.Boxbuscar.Size = New System.Drawing.Size(115, 21)
+        Me.Boxbuscar.TabIndex = 40
         '
-        'AgregarClienteToolStripMenuItem
+        'BtnActualizar
         '
-        Me.AgregarClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarClienteToolStripMenuItem1, Me.AgregarVehiculoToolStripMenuItem})
-        Me.AgregarClienteToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.Guardar
-        Me.AgregarClienteToolStripMenuItem.Name = "AgregarClienteToolStripMenuItem"
-        Me.AgregarClienteToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
-        Me.AgregarClienteToolStripMenuItem.Text = "Agregar"
+        Me.BtnActualizar.Location = New System.Drawing.Point(628, 216)
+        Me.BtnActualizar.Name = "BtnActualizar"
+        Me.BtnActualizar.Size = New System.Drawing.Size(86, 24)
+        Me.BtnActualizar.TabIndex = 41
+        Me.BtnActualizar.Text = "actualizar"
+        Me.BtnActualizar.UseVisualStyleBackColor = True
         '
-        'AgregarClienteToolStripMenuItem1
+        'BtnStart
         '
-        Me.AgregarClienteToolStripMenuItem1.Image = Global.Presentacion.My.Resources.Resources.Guardar1
-        Me.AgregarClienteToolStripMenuItem1.Name = "AgregarClienteToolStripMenuItem1"
-        Me.AgregarClienteToolStripMenuItem1.Size = New System.Drawing.Size(168, 22)
-        Me.AgregarClienteToolStripMenuItem1.Text = "Agregar Producto"
-        '
-        'AgregarVehiculoToolStripMenuItem
-        '
-        Me.AgregarVehiculoToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.Guardar1
-        Me.AgregarVehiculoToolStripMenuItem.Name = "AgregarVehiculoToolStripMenuItem"
-        Me.AgregarVehiculoToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.AgregarVehiculoToolStripMenuItem.Text = "Agregar Vehiculo"
-        '
-        'RealizarTranToolStripMenuItem
-        '
-        Me.RealizarTranToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.transacción
-        Me.RealizarTranToolStripMenuItem.Name = "RealizarTranToolStripMenuItem"
-        Me.RealizarTranToolStripMenuItem.Size = New System.Drawing.Size(150, 20)
-        Me.RealizarTranToolStripMenuItem.Text = "Realizar transacciones"
-        '
-        'ListaToolStripMenuItem
-        '
-        Me.ListaToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.Buscar
-        Me.ListaToolStripMenuItem.Name = "ListaToolStripMenuItem"
-        Me.ListaToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.ListaToolStripMenuItem.Text = "Lista "
+        Me.BtnStart.Location = New System.Drawing.Point(276, 17)
+        Me.BtnStart.Name = "BtnStart"
+        Me.BtnStart.Size = New System.Drawing.Size(11, 17)
+        Me.BtnStart.TabIndex = 42
+        Me.BtnStart.Text = "Guardar"
+        Me.BtnStart.UseVisualStyleBackColor = True
         '
         'Operador
         '
@@ -468,8 +501,8 @@ Partial Class Operador
         Me.MenuStrip1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GrillaOperador, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -495,12 +528,10 @@ Partial Class Operador
     Friend WithEvents BoxGenero As System.Windows.Forms.ComboBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents TxTTelefono As System.Windows.Forms.MaskedTextBox
     Friend WithEvents TxtEdad As System.Windows.Forms.MaskedTextBox
     Friend WithEvents TxtCedula As System.Windows.Forms.MaskedTextBox
     Friend WithEvents TxTDirecion As System.Windows.Forms.TextBox
-    Friend WithEvents TxTTotal As System.Windows.Forms.TextBox
     Friend WithEvents TxTCompra As System.Windows.Forms.TextBox
     Friend WithEvents TxtCorreo As System.Windows.Forms.TextBox
     Friend WithEvents TextNombre As System.Windows.Forms.TextBox
@@ -510,10 +541,15 @@ Partial Class Operador
     Friend WithEvents ListaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BtnEditar As System.Windows.Forms.Button
     Friend WithEvents BtnGuardar As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents GrillaOperador As System.Windows.Forms.DataGridView
+    Friend WithEvents BtnTfoto As System.Windows.Forms.Button
     Friend WithEvents BtnEliminar As System.Windows.Forms.Button
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckEliminar As System.Windows.Forms.CheckBox
     Friend WithEvents Chart1 As System.Windows.Forms.DataVisualization.Charting.Chart
     Friend WithEvents BoxFre As System.Windows.Forms.ComboBox
+    Friend WithEvents GrillaOperador As System.Windows.Forms.DataGridView
+    Friend WithEvents Eliminar As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents Boxbuscar As System.Windows.Forms.ComboBox
+    Friend WithEvents TxtBuscar As System.Windows.Forms.TextBox
+    Friend WithEvents BtnActualizar As System.Windows.Forms.Button
+    Friend WithEvents BtnStart As System.Windows.Forms.Button
 End Class

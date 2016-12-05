@@ -25,7 +25,6 @@ Partial Class ListadoDeUsarios
         Me.components = New System.ComponentModel.Container()
         Me.GboxUser = New System.Windows.Forms.GroupBox()
         Me.TxtTelefono = New System.Windows.Forms.MaskedTextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BtnStart = New System.Windows.Forms.Button()
         Me.BtnSfoto = New System.Windows.Forms.Button()
         Me.BtnTfoto = New System.Windows.Forms.Button()
@@ -62,10 +61,11 @@ Partial Class ListadoDeUsarios
         Me.BtnSalir = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GboxUser.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GboxUserGriw.SuspendLayout()
         CType(Me.GrillaUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GboxUser
@@ -109,15 +109,6 @@ Partial Class ListadoDeUsarios
         Me.TxtTelefono.Name = "TxtTelefono"
         Me.TxtTelefono.Size = New System.Drawing.Size(150, 20)
         Me.TxtTelefono.TabIndex = 26
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Presentacion.My.Resources.Resources.images
-        Me.PictureBox1.Location = New System.Drawing.Point(250, 55)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(118, 119)
-        Me.PictureBox1.TabIndex = 25
-        Me.PictureBox1.TabStop = False
         '
         'BtnStart
         '
@@ -411,6 +402,15 @@ Partial Class ListadoDeUsarios
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Presentacion.My.Resources.Resources.Captura1
+        Me.PictureBox1.Location = New System.Drawing.Point(261, 52)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(114, 122)
+        Me.PictureBox1.TabIndex = 27
+        Me.PictureBox1.TabStop = False
+        '
         'ListadoDeUsarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -423,10 +423,10 @@ Partial Class ListadoDeUsarios
         Me.Text = "ListadoDeUsarios"
         Me.GboxUser.ResumeLayout(False)
         Me.GboxUser.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GboxUserGriw.ResumeLayout(False)
         Me.GboxUserGriw.PerformLayout()
         CType(Me.GrillaUsuario, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

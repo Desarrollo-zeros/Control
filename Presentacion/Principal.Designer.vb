@@ -101,26 +101,11 @@ Partial Class Principal
         '
         'HerramientasToolStripMenuItem
         '
-        Me.HerramientasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoogleToolStripMenuItem, Me.BlocDeNotasToolStripMenuItem, Me.CalculadoraToolStripMenuItem, Me.FotoToolStripMenuItem})
-        Me.HerramientasToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.images__2_
-        Me.HerramientasToolStripMenuItem.Name = "HerramientasToolStripMenuItem"
-        Me.HerramientasToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
-        Me.HerramientasToolStripMenuItem.Text = "Herramientas"
+
         '
         'GoogleToolStripMenuItem
         '
-        Me.GoogleToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.descarga__1_
-        Me.GoogleToolStripMenuItem.Name = "GoogleToolStripMenuItem"
-        Me.GoogleToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.GoogleToolStripMenuItem.Text = "Google"
-        '
-        'BlocDeNotasToolStripMenuItem
-        '
-        Me.BlocDeNotasToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.descarga__2_
-        Me.BlocDeNotasToolStripMenuItem.Name = "BlocDeNotasToolStripMenuItem"
-        Me.BlocDeNotasToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.BlocDeNotasToolStripMenuItem.Text = "Bloc De Notas"
-        '
+   
         'CalculadoraToolStripMenuItem
         '
         Me.CalculadoraToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.calcuworld2
@@ -137,11 +122,7 @@ Partial Class Principal
         '
         'AyudaToolStripMenuItem
         '
-        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DerechoDeAutoToolStripMenuItem})
-        Me.AyudaToolStripMenuItem.Image = Global.Presentacion.My.Resources.Resources.descarga__3_
-        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
-        Me.AyudaToolStripMenuItem.Text = "Ayuda"
+   
         '
         'DerechoDeAutoToolStripMenuItem
         '
