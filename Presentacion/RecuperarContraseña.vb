@@ -36,7 +36,7 @@ Public Class RecuperarContraseña
                         Nombre = usuario.NombreID
                         User = usuario.UsuarioID
                         correo()
-                      
+
 
 
                     End If
@@ -47,7 +47,7 @@ Public Class RecuperarContraseña
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        
+
 
     End Sub
 

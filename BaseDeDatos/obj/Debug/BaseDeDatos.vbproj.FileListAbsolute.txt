@@ -11,3 +11,16 @@ c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos
 c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\obj\Debug\BaseDeDatos.dll
 c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\obj\Debug\BaseDeDatos.xml
 c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\BaseDeDatos\obj\Debug\BaseDeDatos.pdb
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\bin\Debug\BaseDeDatos.dll.config
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\bin\Debug\BaseDeDatos.dll
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\bin\Debug\BaseDeDatos.pdb
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\bin\Debug\BaseDeDatos.xml
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\bin\Debug\Entidades.dll
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\bin\Debug\Entidades.pdb
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\bin\Debug\Entidades.xml
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\obj\Debug\BaseDeDatos.vbprojResolveAssemblyReference.cache
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\obj\Debug\BaseDeDatos.Resources.resources
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\obj\Debug\BaseDeDatos.vbproj.GenerateResource.Cache
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\obj\Debug\BaseDeDatos.dll
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\obj\Debug\BaseDeDatos.xml
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\BaseDeDatos\obj\Debug\BaseDeDatos.pdb

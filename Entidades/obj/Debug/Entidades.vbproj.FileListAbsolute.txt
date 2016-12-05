@@ -6,3 +6,11 @@ c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\o
 c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\obj\Debug\Entidades.dll
 c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\obj\Debug\Entidades.xml
 c:\users\zeros\documents\visual studio 2013\Projects\Rev-Hospitalary\Entidades\obj\Debug\Entidades.pdb
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Entidades\bin\Debug\Entidades.dll
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Entidades\bin\Debug\Entidades.pdb
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Entidades\bin\Debug\Entidades.xml
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Entidades\obj\Debug\Entidades.Resources.resources
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.Cache
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Entidades\obj\Debug\Entidades.dll
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Entidades\obj\Debug\Entidades.xml
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Entidades\obj\Debug\Entidades.pdb

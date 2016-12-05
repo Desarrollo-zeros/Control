@@ -51,6 +51,10 @@ C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\De
 C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.Resources.resources
 C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.Operador.resources
 C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.Principal.resources
-C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.Prueba.resources
 C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.RecuperarContraseña.resources
 C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.vbproj.GenerateResource.Cache
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.EnviarCorreo.resources
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.Productos.resources
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.Lista.resources
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.Vehiculo.resources
+C:\Users\zeros\Documents\Visual Studio 2013\Projects\Control\Presentacion\obj\Debug\Presentacion.Transacciones.resources

@@ -60,6 +60,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -79,10 +80,33 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lista.Designer.vb">
+      <DependentUpon>Lista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lista.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ListadoDeUsarios.Designer.vb">
       <DependentUpon>ListadoDeUsarios.vb</DependentUpon>
     </Compile>
     <Compile Include="ListadoDeUsarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculo.Designer.vb">
+      <DependentUpon>Vehiculo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnviarCorreo.Designer.vb">
+      <DependentUpon>EnviarCorreo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnviarCorreo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.vb">
@@ -96,11 +120,6 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -119,10 +138,10 @@
     <Compile Include="Principal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Prueba.Designer.vb">
-      <DependentUpon>Prueba.vb</DependentUpon>
+    <Compile Include="Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Prueba.vb">
+    <Compile Include="Productos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RecuperarContraseña.Designer.vb">
@@ -131,19 +150,34 @@
     <Compile Include="RecuperarContraseña.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Transacciones.Designer.vb">
+      <DependentUpon>Transacciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transacciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Lista.resx">
+      <DependentUpon>Lista.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListadoDeUsarios.resx">
       <DependentUpon>ListadoDeUsarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehiculo.resx">
+      <DependentUpon>Vehiculo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnviarCorreo.resx">
+      <DependentUpon>EnviarCorreo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Operador.resx">
       <DependentUpon>Operador.vb</DependentUpon>
@@ -151,11 +185,14 @@
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Prueba.resx">
-      <DependentUpon>Prueba.vb</DependentUpon>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RecuperarContraseña.resx">
       <DependentUpon>RecuperarContraseña.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transacciones.resx">
+      <DependentUpon>Transacciones.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -184,9 +221,71 @@
       <Name>Logica</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="resource\Captura.PNG" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="resource\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\Guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\Buscar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\modificar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\Eliminar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\transacción.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\Foto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\sinfoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\Foto1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\moto1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\Googles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\calcuworld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\descarga %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\descarga %283%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

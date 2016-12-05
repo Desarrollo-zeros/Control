@@ -64,6 +64,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ciudades.vb" />
+    <Compile Include="Clientes.vb" />
     <Compile Include="Correos.vb" />
     <Compile Include="EntidadesUsuarios.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -81,7 +83,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Productos.vb" />
     <Compile Include="RecuperarContraseña.vb" />
+    <Compile Include="Transaciones.vb" />
+    <Compile Include="Vehiculo.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

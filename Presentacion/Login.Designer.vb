@@ -95,7 +95,7 @@ Partial Class Login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(435, 140)
+        Me.ClientSize = New System.Drawing.Size(432, 157)
         Me.Controls.Add(Me.BtnRecupear)
         Me.Controls.Add(Me.BtnCerrar)
         Me.Controls.Add(Me.BtnAceptar)
